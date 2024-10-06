@@ -1,0 +1,475 @@
+/* 
+***** Global *****
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-default: #3A1F04;
+    --clr-primary: rgb(158, 120, 97);
+    --clr-secondary: #026548;
+    --clr-text: #b3b1b1;
+    --transition: all 128ms linear;
+}
+
+body {
+    background: #f3f4f6;
+    overflow-x: hidden;
+    font-family: 'Vazirmatn', Vazirmatn !important;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 2.5rem !important;
+    margin: 0 auto;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* flex */
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.fs-1 {
+    font-size: 0.375rem;
+}
+
+.fs-2 {
+    font-size: 0.75rem;
+}
+
+.fs-3 {
+    font-size: 1.125rem;
+}
+
+.fs-4 {
+    font-size: 1.5rem;
+}
+
+.fs-5 {
+    font-size: 1.875rem;
+}
+
+.fs-6 {
+    font-size: 2.25rem;
+}
+
+.fs-7 {
+    font-size: 2.625rem;
+}
+
+.fs-8 {
+    font-size: 3rem;
+}
+
+.fs-9 {
+    font-size: 3.375rem;
+}
+
+.fs-10 {
+    font-size: 3.75rem;
+}
+
+.fw-bold {
+    font-weight: 800;
+}
+
+/* margin */
+
+.m-1 {
+    margin: 0.375rem;
+}
+
+.m-2 {
+    margin: 0.75rem;
+}
+
+.m-3 {
+    margin: 1.125rem;
+}
+
+.m-4 {
+    margin: 1.5rem;
+}
+
+.m-5 {
+    margin: 1.875rem;
+}
+
+.m-6 {
+    margin: 2.25rem;
+}
+
+.m-7 {
+    margin: 2.625rem;
+}
+
+.m-8 {
+    margin: 3rem;
+}
+
+.m-9 {
+    margin: 3.375rem;
+}
+
+.m-10 {
+    margin: 3.75rem;
+}
+
+.mx-1 {
+    margin: 0 0.375rem;
+}
+
+.mb-4 {
+    margin-bottom: 3rem;
+}
+
+.mb-5 {
+    margin-bottom: 22rem;
+}
+
+/* padding */
+
+.p-1 {
+    padding: 0.375rem;
+}
+
+.p-2 {
+    padding: 0.75rem;
+}
+
+.p-3 {
+    padding: 1.125rem;
+}
+
+.p-4 {
+    padding: 1.5rem;
+}
+
+.p-5 {
+    padding: 1.875rem;
+}
+
+.p-6 {
+    padding: 2.25rem;
+}
+
+.p-7 {
+    padding: 2.625rem;
+}
+
+.p-8 {
+    padding: 3rem;
+}
+
+.p-9 {
+    padding: 3.375rem;
+}
+
+.p-10 {
+    padding: 3.75rem;
+}
+
+/* gap */
+
+.gap-1 {
+    gap: 0.375rem;
+}
+
+.gap-2 {
+    gap: 0.75rem;
+}
+
+.gap-3 {
+    gap: 1.125rem;
+}
+
+.gap-4 {
+    gap: 1.5rem;
+}
+
+.gap-5 {
+    gap: 1.875rem;
+}
+
+.gap-6 {
+    gap: 2.25rem;
+}
+
+.gap-7 {
+    gap: 2.625rem;
+}
+
+.gap-8 {
+    gap: 3rem;
+}
+
+.gap-9 {
+    gap: 3.375rem;
+}
+
+.gap-10 {
+    gap: 3.75rem;
+}
+
+.btn {
+    all: unset;
+}
+
+
+/* 
+***** Header *****
+*/
+
+.logo-image {
+    width: 98px;
+    height: 98px;
+    border-radius: 50%;
+    background-size: cover;
+    overflow: hidden;
+    position: absolute;
+    left: 5%;
+}
+
+.clubBtn {
+    padding: 5px;
+    border: 3px solid white;
+    background-color: var(--clr-secondary);
+    color: whitesmoke;
+    border-radius: 15px;
+    text-decoration: none;
+    position: absolute;
+    top: 33.5%;
+    right: 3%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.clubBtn:hover {
+    transform: scale(1.1);
+    background-color: #2A9577;
+}
+
+
+
+.register {
+    margin-right: 7%;
+    font-size: 0.94rem;
+}
+
+#header {
+    background-color: #fff;
+    position: relative;
+}
+
+#header .container {
+    padding: 5rem;
+}
+
+#header .logo a {
+    color: var(--clr-secondary);
+}
+
+#header nav ul li {
+    padding: 0.5rem;
+}
+
+#header nav .btn.btn-menu {
+    display: none;
+}
+
+#header nav .btn.btn-menu i {
+    font-size: 3rem;
+    color: var(--clr-default);
+}
+
+#header nav ul li a:not(#header .btn.btn-nav) {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    color: var(--clr-text);
+}
+
+#header nav ul li a:hover:not(#header .btn.btn-nav) {
+    color: var(--clr-secondary);
+    border-bottom: 1px solid var(--clr-secondary);
+}
+
+#header .btn.btn-nav {
+    padding: 0.375rem 1rem;
+    background: var(--clr-default);
+    border-radius: 0.375rem;
+    color: #fff;
+}
+
+#header .btn.btn-nav:hover {
+    background: var(--clr-primary);
+}
+
+#header .btn.btn-nav:active {
+    background: var(--clr-secondary);
+}
+
+.form-control,
+label {
+    width: 94%;
+    margin: 0.375rem 0;
+}
+
+.form-control {
+    padding: 0.375rem;
+    border-radius: 2rem;
+    border: 2px solid green;
+}
+
+.form-control:focus-visible {
+    outline-offset: -2px;
+    outline: 2px solid var(--clr-secondary);
+    box-shadow: 0 0 3px var(--clr-secondary);
+}
+
+.search-box {
+    margin-right: 10px;
+}
+
+
+
+/* 
+***** Hero Static *****
+*/
+
+#hero-static {
+    padding: 0;
+    position: relative;
+}
+
+#hero-static .img {
+    width: 100%;
+    height: 60vh;
+    background-image: url(assets/img/hero/top-view-delicious-coffee-beans-arrangement_23-2150691447.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#hero-static h1 {
+    font-size: 4rem;
+    position: absolute;
+    top: 16%;
+    right: 3%;
+    color: #362312;
+}
+
+#hero-static p {
+    font-size: 3rem;
+    position: absolute;
+    top: 37%;
+    right: 17%;
+    color: #362312;
+}
+
+#hero-static .p2 {
+    font-size: 3rem;
+    position: absolute;
+    top: 53%;
+    right: 24%;
+    color: #362312;
+}
+
+
+
+/* 
+***** About *****
+*/
+
+#about {
+    padding: 3.2rem;
+}
+
+#about .row {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.375rem;
+    flex-wrap: nowrap;
+    margin-right: 0;
+}
+
+#about .container {
+    margin: 0;
+}
+
+#about .row .content {
+    order: 2; 
+    flex: 1; 
+}
+
+#about .row .image {
+    order: 1;
+    width: 50%;
+}
+
+
+
+#about .row .content h2 {
+    padding: 0.375rem;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--clr-default);
+    margin-right: 20px;
+}
+
+#about .row .content p {
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: #263238;
+    margin-right: 30px;
+    margin-top: 50px;
+}
+
+
+/* 
+***** Responsives *****
+*/
+
