@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> ATMA COFFEE </title>
 
     <link rel="stylesheet" href="assets/fonts/Vazirmatn/Vazirmatn-font-face.css">
     <link rel="stylesheet" href="assets/fonts/Vazirmatn/Vazirmatn-Variable-font-face.css">
@@ -14,7 +14,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
+
+<!-- pre loader page -->
+
+<!-- <div id="preloader">
+    <div class="loader">
+        <label for="file">Downloading progress:</label>
+        <progress id="file" value="32" max="100"> 32% </progress>
+        <div class="progress-bar"></div>
+        <p>LOADING.</p>
+    </div>
+</div> -->
+
+<!--------------------->
+
 
     <div class=" register row d-flex m-3">
         <a href="" target="_blank"> ورود | ثبت نام </a>
@@ -52,9 +67,6 @@
                         <li>
                             <a href="#" target="_blank" rel="noopener noreferrer">تماس با ما</a>
                         </li>
-                        <!-- <li>
-                            <a href="#" target="_blank" class="btn btn-nav" rel="noopener noreferrer">مشاوره</a>
-                        </li> -->
                     </ul>
                 </nav>
 
@@ -67,6 +79,9 @@
         </div>
     </header>
 
+
+
+    <div class="fade-in">
     <section id="hero-static">
                 <div class="img"> 
                     <h1>
@@ -80,10 +95,13 @@
                     </p>
                 </div>
     </section>
+    </div>
 
 
     <section id="about">
-        <img src="assets/img/about/mug.png" class="mugPng" alt="">
+        <div class="mugDiv d-flex justify-content-center align-items-center">
+            <img src="assets/img/about/mug.png" class="mugPng" alt="">
+        </div>
         <div class="container">
             <div class="row clearfix">
 
@@ -107,52 +125,65 @@
     </section>
 
 
-    <section id="events">
-        <div class="container">
-            <h2 class="fs-6 fw-bold"> رویداد های ما </h2>
-            <br>
-            <br>
-            <div class="row d-flex justify-content-between align-items-start gap-4">
 
-                <div class="item"> 
-                    <div class="item-img">
-                        <img src="assets/img/events/kargah.jpeg" alt=""> 
+
+
+                
+    <div class="fly-in-section">
+        <section id="events">
+            <div class="container">
+                <h2 class="fs-6 fw-bold"> رویداد های ما </h2>
+                <br>
+                <br>
+                <div class="row d-flex justify-content-between align-items-start gap-4">
+                    
+                    <div class="item"> 
+                        <div class="item-img">
+                            <img src="assets/img/events/kargah.jpeg" alt=""> 
+                        </div>
+                        <h2 class="item-h21 fs-5">
+                            کارگاه قهوه سازی
+                        </h2>
+                        <p class="item-p fs-3">
+                            یاد بگیرید چگونه قهوه ای بی نظیر درست کنید !
+                        </p>
                     </div>
-                    <h2 class="item-h21 fs-5">
-                        کارگاه قهوه سازی
-                    </h2>
-                    <p class="item-p fs-3">
-                        یاد بگیرید چگونه قهوه ای بی نظیر درست کنید !
-                    </p>
-                </div>
-
-                <div class="item">  
-                    <div class="item-img">
-                        <img src="assets/img/events/film.jpg" alt=""> 
+    
+                    <div class="item">  
+                        <div class="item-img">
+                            <img src="assets/img/events/film.jpg" alt=""> 
+                        </div>
+                        <h2 class="item-h21 fs-5">
+                            دورهمی نقد فیلم 
+                        </h2>
+                        <p class="item-p fs-3">
+                            هر شب , دورهمی نقد یک فیلم برتر سینما !
+                        </p>
                     </div>
-                    <h2 class="item-h21 fs-5">
-                        دورهمی نقد فیلم 
-                    </h2>
-                    <p class="item-p fs-3">
-                        هر شب , دورهمی نقد یک فیلم برتر سینما !
-                    </p>
-                </div>
-
-                <div class="item">  
-                    <div class="item-img">
-                        <img src="assets/img/events/coffee day.jpg" alt=""> 
+    
+                    <div class="item">  
+                        <div class="item-img">
+                            <img src="assets/img/events/friends.jpg" alt=""> 
+                        </div>
+                        <h2 class="item-h21 fs-5">
+                            مهمانی گرم کافه ای
+                        </h2>
+                        <p class="item-p fs-3">
+                            منتظر شما و عزیزانتان در مناسبت ها هستیم !
+                        </p>
                     </div>
-                    <h2 class="item-h21 fs-5">
-                        مهمانی گرم کافه ای
-                    </h2>
-                    <p class="item-p fs-3">
-                        منتظر شما و عزیزانتان در مناسبت ها هستیم !
-                    </p>
+    
                 </div>
-
+    
             </div>
+    </div>
 
-        </div>
+    
+
+
+
+    <script src="assets/vendor/jquery-3.7.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 
