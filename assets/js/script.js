@@ -23,10 +23,10 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         document.getElementById('preloader').style.animation = 'flyIn 1s forwards';
         setTimeout(function() {
-            document.getElementById('preloader').style.display = 'none';
-            document.getElementById('content').style.display = 'block';
+            // document.getElementById('preloader').style.display = 'none';
+            // document.getElementById('content').style.display = 'block';
         }, 1000); // زمان انیمیشن flyIn
-    }, 3000); // زمان نمایش preloader
+    }, 4000); // زمان نمایش preloader
 });
 
 
