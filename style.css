@@ -20,7 +20,6 @@
     opacity: 0.4;
     filter: blur(4.5px);
     z-index: -1;
-    -webkit-filter: blur(4.5px);
 }
 
 #preloader h2 {
@@ -163,7 +162,7 @@
 }
 
 :root {
-    --clr-default: #3A1F04;
+    --clr-default: #3a1f04;
     --clr-primary: #9e7861;
     --clr-secondary: #026548;
     --clr-text: #b3b1b1;
@@ -648,7 +647,7 @@ label {
     margin-top: 45px;
 }
 
-#about .mugDiv {
+/* #about .mugDiv {
     width: 150px;
     height: 150px;
     position: absolute;
@@ -673,7 +672,7 @@ label {
         rotate: -30deg;
     }
 
-}
+} */
 
 
 
@@ -686,7 +685,6 @@ label {
     width: 100%;
     height: 100vh;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .item {
@@ -736,6 +734,68 @@ text-align: center;
     opacity: 1;
     transform: translateY(0);
 }
+
+
+/* 
+***** menu intro *****
+*/
+
+#menu-intro .row {
+    flex-wrap: wrap;
+}
+
+#menu-intro {
+    margin-top: 10%;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background-color: #e6e6e6a7;
+}
+
+#menu-intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url(assets/img/menuitem/vecteezy_black-and-white-coffee-shop-background-eps_4684788.jpg);
+    opacity: 0.8;
+    filter: blur(3px); */
+    z-index: -1;
+}
+
+#menu-intro .container .row .menuItem {
+    width: 120px;
+    height: 120px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    margin: 6%;
+    margin-top: 3%;
+    margin-bottom: 8%;
+}
+
+#menu-intro .container h2 {
+    position: absolute;
+    top: 4.8%;
+    right: 5%;
+}
+
+#menu-intro .container .row .menuItem img {
+    width: 60%;
+    height: 70%;
+}
+
+#menu-intro .container .row .menuItem .p1 {
+    position: absolute;
+    top: 45%;
+}
+
+#menu-intro .container .row .menuItem .p2 {
+    position: absolute;
+    top: 85%;
+}
+
 
 
 
