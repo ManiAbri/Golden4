@@ -687,6 +687,10 @@ label {
     background-size: cover;
 }
 
+#events .caption {
+    color: var(--clr-secondary);
+}
+
 .item {
     width: 390px;
     height: 800px;
@@ -773,12 +777,14 @@ text-align: center;
     margin: 6%;
     margin-top: 3%;
     margin-bottom: 8%;
+    border: 4px solid var(--clr-secondary);
 }
 
 #menu-intro .container h2 {
     position: absolute;
     top: 4.8%;
     right: 5%;
+    color: var(--clr-secondary);
 }
 
 #menu-intro .container .row .menuItem img {
@@ -795,6 +801,84 @@ text-align: center;
     position: absolute;
     top: 85%;
 }
+
+
+/* 
+***** Gallery *****
+*/
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s ease;
+}
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+.section-gal {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+#gallery {
+    position: relative;
+    margin-top: 2%;
+}
+
+#gallery .container .row .section-gal h2 {
+    position: absolute;
+    top: -10%;
+    right: 5%;
+    color: var(--clr-secondary);
+    padding: 30px;
+}
+
+
+.gallery-container {
+    width: 70%;
+    height: 65%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0;
+}
+  
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 20px;
+    object-fit: cover;
+}
+  
+  .gallery-image.active {
+    display: block;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+}
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
 
 
 

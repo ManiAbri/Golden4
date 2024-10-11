@@ -45,3 +45,43 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(flyInSection);
 });
 
+
+
+document.addEventListener('scroll', function() {
+    const section = document.getElementById('animatedSection');
+    const rect = section.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+        if (!localStorage.getItem('animationPlayed')) {
+            section.classList.add('visible');
+            localStorage.setItem('animationPlayed', 'true');
+        }
+    }
+});
+
+window.addEventListener('load', function() {
+    localStorage.removeItem('animationPlayed');
+});
+
+
+
+let currentIndex = 0;
+        const images = document.querySelectorAll('.gallery-image');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        
+        function showImage(index) {
+          images.forEach((img, i) => {
+            img.classList.toggle('active', i === index);
+          });
+        }
+        
+        prevButton.addEventListener('click', () => {
+          currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+          showImage(currentIndex);
+        });
+        
+        nextButton.addEventListener('click', () => {
+          currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+          showImage(currentIndex);
+        });
+
