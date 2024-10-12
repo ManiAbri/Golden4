@@ -85,3 +85,4 @@ let currentIndex = 0;
           showImage(currentIndex);
         });
 
+
