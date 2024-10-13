@@ -16,9 +16,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(assets/img/loading/backg.jpg) no-repeat center center/cover;
+    background: url(assets/img/loading/light-coffee-background_670147-41733.jpg) no-repeat center center/cover;
     opacity: 0.4;
-    filter: blur(4.5px);
     z-index: -1;
 }
 
@@ -914,6 +913,11 @@ text-align: center;
     color: white;
     border-radius: 20px;
     margin-top: 6%;
+    display: block;
+}
+
+#common-quest .container .row .summary-parents {
+    width: 100%;
 }
 
 #common-quest .container .row details summary {
@@ -925,7 +929,7 @@ text-align: center;
 
 #common-quest .container .row h2 {
     position: absolute;
-    top: -40%;
+    top: -20%;
     font-size: 36px;
     color: var(--clr-secondary);
     border: 4px dashed var(--clr-secondary);
@@ -937,7 +941,7 @@ text-align: center;
 
 #common-quest .container .row .commonQuestTitleDash {
     position: absolute;
-    top: -30%;
+    top: -16%;
     font-size: 36px;
     font-weight: 600;
     color: var(--clr-secondary);
@@ -946,7 +950,23 @@ text-align: center;
 #common-quest .container .row details p {
     padding: 20px;
 }
+
+
+
+/* 
+***** Footer *****
+*/
   
+#footer {
+    background-color: #5b6c74;
+    width: 100%;
+}
+
+#footer .container .row .footer-item {
+    background-color: red;
+    width: 20%;
+    height: 20%;
+}
   
 
 
