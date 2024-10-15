@@ -895,6 +895,37 @@ text-align: center;
 }
 
 
+/* 
+***** Common Questions title *****
+*/
+
+.commonQ-title {
+    position: relative;
+    margin-top: -7%;
+    margin-bottom: 5%;
+}
+
+
+.commonQ-title h2 {
+    position: absolute;
+    left: 43%;
+    font-size: 36px;
+    color: var(--clr-secondary);
+    border: 4px dashed var(--clr-secondary);
+    border-radius: 40px;
+    padding: 1%;
+    background-color: #f3f4f6;
+}
+
+.commonQ-title .commonQuestTitleDash {
+    position: absolute;
+    left: 14%;
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--clr-secondary);
+}
+
+
 
 /* 
 ***** Common Questions *****
@@ -927,7 +958,7 @@ text-align: center;
     border-radius: 20px;
 }
 
-#common-quest .container .row h2 {
+/* #common-quest .container .row h2 {
     position: absolute;
     top: -20%;
     font-size: 36px;
@@ -945,7 +976,7 @@ text-align: center;
     font-size: 36px;
     font-weight: 600;
     color: var(--clr-secondary);
-}
+} */
 
 #common-quest .container .row details p {
     padding: 20px;
