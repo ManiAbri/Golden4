@@ -908,7 +908,7 @@ text-align: center;
 
 .commonQ-title h2 {
     position: absolute;
-    left: 43%;
+    left: 41%;
     font-size: 36px;
     color: var(--clr-secondary);
     border: 4px dashed var(--clr-secondary);
@@ -937,10 +937,15 @@ text-align: center;
     margin-top: -2%;
 }
 
+#common-quest .container .row .CommonQ-png {
+    width: 35%;
+    height: 35%;
+}
+
 #common-quest .container .row details {
-    width: 70%;
+    width: 90%;
     height: 40%;
-    background-color: #5b6c74;
+    background-color: var(--clr-secondary);
     color: white;
     border-radius: 20px;
     margin-top: 6%;
@@ -952,7 +957,7 @@ text-align: center;
 }
 
 #common-quest .container .row details summary {
-    background-color: #5b6c74;
+    background-color: var(--clr-secondary);
     color: white;
     padding: 20px;
     border-radius: 20px;
@@ -991,12 +996,42 @@ text-align: center;
 #footer {
     background-color: #5b6c74;
     width: 100%;
+    height: 45vh;
+    margin-top: 5%;
+}
+
+#footer .container {
+    margin: 0;
 }
 
 #footer .container .row .footer-item {
-    background-color: red;
     width: 20%;
     height: 20%;
+}
+
+#footer .container .row .footer-item1 img {
+    width: 70%;
+    height: 70%;
+    margin-right: 10%;
+}
+
+#footer .container .row .footer-item1 p {
+    color: white;
+    text-align: justify;
+}
+
+
+/* 
+***** Copy Right *****
+*/
+
+
+.copy-right {
+    background-color: #f3f4f6;
+}
+
+.copy-right span {
+    color: #2A9577;
 }
   
 
