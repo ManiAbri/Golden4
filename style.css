@@ -755,22 +755,9 @@ text-align: center;
     background-color: #e6e6e6a7;
 }
 
-#menu-intro::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background-image: url(assets/img/menuitem/vecteezy_black-and-white-coffee-shop-background-eps_4684788.jpg);
-    opacity: 0.8;
-    filter: blur(3px); */
-    z-index: -1;
-}
-
 #menu-intro .container .row .menuItem {
-    width: 120px;
-    height: 120px;
+    width: 11%;
+    height: 3%;
     background-color: whitesmoke;
     border-radius: 50%;
     margin: 6%;
@@ -787,10 +774,10 @@ text-align: center;
 }
 
 #menu-intro .container .row .menuItem img {
-    width: 60%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
+    padding: 10%;
     animation: menuItemAnm 4s infinite;
-    -webkit-animation: menuItemAnm 4s infinite;
 }
 
 @keyframes menuItemAnm {
@@ -950,6 +937,7 @@ text-align: center;
     border-radius: 20px;
     margin-top: 6%;
     display: block;
+    cursor: pointer;
 }
 
 #common-quest .container .row .summary-parents {
