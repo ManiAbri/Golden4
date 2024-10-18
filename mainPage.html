@@ -58,18 +58,19 @@
                             <a href="#" target="_blank" rel="noopener noreferrer"> معرفی انواع قهوه </a>
                         </li>
                         <li>
-                            <a href="#" target="_blank" rel="noopener noreferrer"> درباره </a>
+                            <a href="about.html" target="_blank" rel="noopener noreferrer"> درباره </a>
                         </li>
                         <li>
-                            <a href="#" target="_blank" rel="noopener noreferrer">تماس با ما</a>
+                            <a href="#ContactUs">تماس با ما</a>
+                        </li>
+                        <li>
+                            <div class="search-box">
+                                <label for="serach" class="labelserach"> </label>
+                                <input type="search" id="search" class="form-controlse" placeholder="جستجو...">
+                            </div>
                         </li>
                     </ul>
                 </nav>
-
-                <div class="search-box">
-                    <label for="serach"> </label>
-                    <input type="search" id="search" class="form-control" placeholder="جستجو...">
-                </div>
 
             </div>
         </div>
@@ -208,6 +209,10 @@
                     <img src="assets/img/menuitem/breakfst.png" alt="">
                     <p class="p2 d-flex justify-content-center">صبحانه سلف</p>
                 </div>
+                <div class="menuItem d-flex justify-content-center align-items-center"> 
+                    <img src="assets/img/menuitem/snack.png" alt="">
+                    <p class="p2 d-flex justify-content-center">اسنک و ساندویچ سرد</p>
+                </div>
 
 
             </div>   
@@ -281,45 +286,63 @@
     </section>
 
 
-    <div class="contact-title d-flex justify-content-between align-items-center">
-        <div class="contactTitleDash">
-            ------------------------------------------------------------
-        </div>
-        <h2>تماس با ما</h2>
-    </div>
-
-
     <section id="ContactUs">
         <div class="container">
-            <div class="row d-flex justify-content-center align-items-center gap-3">
+            <div class="row d-flex justify-content-center align-items-start gap-9">
 
-
-                <div class="contact-div">
-                    <h2>ارتباط با شما افتخار ماست</h2>
-                    <p>ما همواره آماده پاسخگویی به سوالات و شنیدن نظرات شما هستیم. با ما در ارتباط باشید. از طریق فرم , تماس یا شبکه های اجتماعی ما در ارتباط باشید</p>
+                <div class="contact-title d-flex justify-content-between align-items-center">
+                    <div class="contactTitleDash">
+                        ------------------------------------------------------------
+                    </div>
+                    <h2>تماس با ما</h2>
                 </div>
 
-                <form action="" autocomplete="off">
-                    <label for="fullname"></label>
-                    <input type="text" id="fullname" placeholder="نام و نام خانوادگی">
-                </form>
+                <div class="contact-div">
+                    <h2 class="p-2">ارتباط با شما افتخار ماست</h2>
+                    <p class="descriptionCon">ما همواره آماده پاسخگویی به سوالات و شنیدن نظرات ارزشمند شما هستیم. از طریق فرم , تماس یا شبکه های اجتماعی با ما در ارتباط باشید</p>
+                    <br>
+                    <i class="bi bi-telephone-fill"></i>
+                    <p class="fs-3 fw-bold callTitle" style="display: inline;"> &nbsp تماس :</p>
+                    <p class="phone">041-33301234</p>
+                    <hr class="contact-hr">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <p class="fs-3 fw-bold callTitle" style="display: inline;"> &nbsp آدرس :</p>
+                    <p class="phone">تبریز - ولیعصر - فلکه بازار</p>
+                    <hr class="contact-hr"> 
+                    <i class="bi bi-instagram"></i>                   
+                    <p class="fs-3 fw-bold callTitle" style="display: inline;"> &nbsp اینستاگرام :</p>
+                    <p class="phone">ATMA_Coffee_tbz@</p>
+                </div>
 
-                <form action="" autocomplete="off">
-                    <label for="email"></label>
-                    <input type="email" id="email" placeholder="ایمیل">
-                </form>
+                <div class="form-container">
 
-                <form action="" autocomplete="off">
-                    <label for="subject"></label>
-                    <input type="text" id="subject" placeholder="موضوع">
-                </form>
+                    <div class="inline-forms">
+                        <form action="" autocomplete="off" class="NameAndEmail-form">
+                            <label for="fullname"></label>
+                            <input type="text" id="fullname" placeholder="نام و نام خانوادگی" class="form-control form-control1">
+                        </form>
+        
+                        <form action="" autocomplete="off" class="NameAndEmail-form">
+                            <label for="email"></label>
+                            <input type="email" id="email" placeholder="ایمیل" class="form-control form-control2">
+                        </form>
+                    </div>
 
-                <form action="" autocomplete="off">
-                    <label for="message"></label>
-                    <input type="text" id="message" placeholder="پیام">
-                </form>
+                    <form action="" autocomplete="off">
+                        <label for="subject"></label>
+                        <input type="text" id="subject" placeholder="موضوع" class="form-control form-control3">
+                    </form>
+    
+                    <form action="" autocomplete="off" class="form4">
+                        <label for="message"></label>
+                        <input type="text" id="message" placeholder="پیام" class="form-control form-control4">
+                    </form>
 
-                
+                    <div class="submit-div">
+                        <input type="submit" class="btn btn-send" value="ارسال">
+                    </div>
+
+                </div>
 
 
             </div>   
@@ -345,7 +368,7 @@
                     <div class="fi2-div">
                         <a href="" target="_blank">منوی کافه ATMA</a>
                         <a href="" target="_blank">درباره ما</a>
-                        <a href="" target="_blank">تماس با ما</a>
+                        <a href="#ContactUs1" id="contact-link">تماس با ما</a>
                     </div>
                 </div>
 
